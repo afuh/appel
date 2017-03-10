@@ -1,0 +1,35 @@
+// Breakpoints //
+
+//1440px
+
+//1129px:
+////cambia la imagen grande
+
+//1068px:
+////las imágenes de abajo se ponen 2x2
+
+//767px:
+//// cambia el navbar y las listas de abajo
+
+//735px:
+////las imágenes de abajo se ponen de a 1
+
+
+@media screen and (max-width: 1129px)
+    .big-picture
+      background: url("../images/macbookpro_portrait_medium.jpg") no-repeat
+      background-size: auto 100%
+      background-position: top center
+
+@media screen and (max-width: 1068px)
+  .images
+    flex-wrap: wrap
+    justify-content: center
+  .img
+    width: 50%
+
+@media screen and (max-width: 735px)
+  .images
+    flex-direction: column
+  .img
+    width: 100%

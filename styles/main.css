@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  min-width: 1042px;
+  height: 44px;
+}
+
+.nav {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 22px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav span {
+  padding: 0 10px;
+  -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  cursor: pointer;
+}
+
+.nav span:hover {
+  opacity: 0.65;
+}
+
+.main-section {
+  width: 100%;
+  height: 85vh;
+}
+
+.main-section .text {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-section .text h1, .main-section .text h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.big-picture {
+  -webkit-box-flex: 8;
+      -ms-flex-positive: 8;
+          flex-grow: 8;
+  background: url("../images/macbookpro_large.jpg") no-repeat;
+  background-size: auto 100%;
+  background-position: top center;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.images {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.img-1 {
+  background: url("../images/ipad_pro_small.jpg") no-repeat;
+}
+
+.img-2 {
+  background: url("../images/tv_small.jpg") no-repeat;
+}
+
+.img-3 {
+  background: url("../images/airpods_alt_small.jpg") no-repeat;
+}
+
+.img-4 {
+  background: url("../images/accessories_small.jpg") no-repeat;
+}
+
+.img {
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  width: 100%;
+  height: 200px;
+  background-position: center center;
+}
+
+@media screen and (max-width: 1129px) {
+  .big-picture {
+    background: url("../images/macbookpro_portrait_medium.jpg") no-repeat;
+    background-size: auto 100%;
+    background-position: top center;
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .images {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .img {
+    width: 100%;
+  }
+}
