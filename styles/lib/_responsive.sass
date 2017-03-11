@@ -1,19 +1,4 @@
-// Breakpoints //
-
-//1440px
-
-//1129px:
-////cambia la imagen grande
-
-//1068px:
-////las imágenes de abajo se ponen 2x2
-
-//767px:
-//// cambia el navbar y las listas de abajo
-
-//735px:
-////las imágenes de abajo se ponen de a 1
-
+/* ============= Breakpoints ============= */
 
 @media screen and (max-width: 1129px)
     .big-picture
@@ -25,11 +10,41 @@
   .images
     flex-wrap: wrap
     justify-content: center
+
   .img
     width: 50%
+
+  .main-section
+    .text
+      h1
+        font-size: 28px
+      h2
+        font-size: 40px
+
+@media screen and (max-width: 767px)
+  header
+    height: 48px
+    .nav
+      justify-content: center
+      .menu
+        display:
+      span:not(:first-child)
+        display: none
+
+  footer
+    .content
+      display: none
 
 @media screen and (max-width: 735px)
   .images
     flex-direction: column
+
   .img
     width: 100%
+
+  .main-section
+    .text
+      h1
+        font-size: 22px
+      h2
+        font-size: 31px
