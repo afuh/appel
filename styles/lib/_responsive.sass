@@ -1,17 +1,17 @@
 /* ============= Breakpoints ============= */
 
-@media screen and (max-width: 1129px)
+@media only screen and (max-width: 1129px)
     .big-picture
       background: url("../images/macbookpro_portrait_medium.jpg") no-repeat
       background-size: auto 100%
       background-position: top center
 
-@media screen and (max-width: 1068px)
+@media only screen and (max-width: 1068px)
   .images
     flex-wrap: wrap
     justify-content: center
 
-  .img
+  [class*="img-"]
     width: 50%
 
   .main-section
@@ -21,7 +21,7 @@
       h2
         font-size: 40px
 
-@media screen and (max-width: 767px)
+@media only screen and (max-width: 768px)
   header
     height: 48px
     .nav
@@ -35,11 +35,11 @@
     .content
       display: none
 
-@media screen and (max-width: 735px)
+@media only screen and (max-width: 735px)
   .images
     flex-direction: column
 
-  .img
+  [class*="img-"]
     width: 100%
 
   .main-section
